@@ -37,7 +37,7 @@ pdfView.fromAsset(String)
 # 最后加载文件
 
 ```
-pdfView..load();
+pdfView.load();
 ```
 
 # 例子
