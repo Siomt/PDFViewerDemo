@@ -1,10 +1,10 @@
- # build.gradle Ìí¼Ó
+ # build.gradle æ·»åŠ 
 
 ```
 compile 'com.github.barteksc:android-pdf-viewer:3.0.0-beta.3'
 ```
 
-# Ìí¼ÓÈ¨ÏŞ
+# æ·»åŠ æƒé™
 
 ```
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -15,7 +15,7 @@ compile 'com.github.barteksc:android-pdf-viewer:3.0.0-beta.3'
     <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
 ```
 
-# Ìí¼Ó¿Ø¼ş
+# æ·»åŠ æ§ä»¶
 
 ```
 <com.github.barteksc.pdfviewer.PDFView
@@ -24,7 +24,7 @@ compile 'com.github.barteksc:android-pdf-viewer:3.0.0-beta.3'
         android:layout_height="match_parent"/>
 ```
 
-# ¼ÓÔØÎÄ¼ş·½Ê½£¬ÁíÑ¡Ò»ÖÖ¼´¿É
+# åŠ è½½æ–‡ä»¶æ–¹å¼ï¼Œå¦é€‰ä¸€ç§å³å¯
 
 ```
 pdfView.fromUri(Uri)
@@ -34,17 +34,17 @@ pdfView.fromStream(InputStream)
 pdfView.fromSource(DocumentSource)
 pdfView.fromAsset(String)
 ```
-# ×îºó¼ÓÔØÎÄ¼ş
+# æœ€ååŠ è½½æ–‡ä»¶
 
 ```
 pdfView..load();
 ```
 
-# Àı×Ó
+# ä¾‹å­
 
 ```
  File path = new File(Environment.getExternalStorageDirectory().getPath() + "/pdfdemo.pdf");
         PDFView pdfView = findViewById(R.id.pdfView);
         pdfView.fromFile(path).load();
 ```
-×¢£ºÎÒµÄÊÖ»ú¸ùÄ¿Â¼ÏÂÓĞ**pdfdemo.pdf **Õâ¸öÎÄ¼ş¡£
+æ³¨ï¼šæˆ‘çš„æ‰‹æœºæ ¹ç›®å½•ä¸‹æœ‰**pdfdemo.pdf **è¿™ä¸ªæ–‡ä»¶ã€‚
